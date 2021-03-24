@@ -5,7 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "fix": "npm run prettier && npm run eslint:fix",
+    "stylelint": "stylelint './src/**/*.{ts,tsx}'",
+    "prettier": "prettier './src/**/*.{ts,tsx}' --write",
+    "eslint": "eslint 'src/**/*.{ts,tsx}'",
+    "eslint:fix": "npm run eslint -- --fix",
+    "lint": "npm run eslint && npm run stylelint"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
