@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
-import { ThemeType } from './theme';
+import { StyledComponentsThemeType } from './theme';
 
-const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
+export const GlobalStyle = createGlobalStyle<{ theme: StyledComponentsThemeType }>`
   html{
       background-color: ${(props) => props.theme.color.background};
   }
@@ -23,5 +23,3 @@ const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
     box-sizing: border-box;
   }
 `;
-
-export { GlobalStyle };

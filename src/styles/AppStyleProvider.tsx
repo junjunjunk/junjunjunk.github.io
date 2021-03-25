@@ -1,12 +1,13 @@
 import * as React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { theme } from './theme';
+import { ThemeProvider as MuiThemeProvider } from '@material-ui/styles';
+import { styledComponentsTheme, muiTheme } from './theme';
 import { GlobalStyle } from './GlobalStyle';
 
 const AppStyleProvider: React.FC = ({ children }) => (
-  <ThemeProvider theme={theme}>
+  <ThemeProvider theme={styledComponentsTheme}>
     <GlobalStyle />
-    {children}
+    <MuiThemeProvider theme={muiTheme}>{children}</MuiThemeProvider>
   </ThemeProvider>
 );
 
