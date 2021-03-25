@@ -23,6 +23,10 @@ export const primaryPalatte = {
   contrastText: '#FFFFFF',
 };
 
+// --font-base: -apple-system,"BlinkMacSystemFont","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif,"Segoe UI Emoji";
+//     --font-code: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace,"Segoe UI Emoji";
+//     --font-alphabet-only: "Inter","BlinkMacSystemFont",Arial,sans-serif;
+
 export const muiTheme = createMuiTheme({
   palette: {
     primary: primaryPalatte,
@@ -30,6 +34,40 @@ export const muiTheme = createMuiTheme({
 
   shape: {
     borderRadius: 0,
+  },
+
+  typography: {
+    fontFamily: [
+      '-apple-system',
+      'BlinkMacSystemFont',
+      'ヒラギノ角ゴシック',
+      '"ヒラギノ角ゴ ProN"',
+      '"Hiragino Kaku Gothic ProN"',
+      '"Hiragino Sans"',
+      'Meiryo',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
+
+    fontSize: 12,
+    h3: {
+      fontSize: 32,
+      fontFamily: [
+        'ヒラギノ角ゴシック',
+        '"ヒラギノ角ゴ ProN"',
+        'Inter',
+        '"Hiragino Kaku Gothic ProN"',
+        '"Hiragino Sans"',
+        'Roboto',
+        '--apple-system',
+      ].join(','),
+    },
   },
 
   props: {

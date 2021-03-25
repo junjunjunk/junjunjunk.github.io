@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle<{ theme: StyledComponentsThemeType 
   body {
     padding: 0;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    font-family: -apple-system, BlinkMacSystemFont, Inter, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     color: ${(props) => props.theme.color.text};
   }
