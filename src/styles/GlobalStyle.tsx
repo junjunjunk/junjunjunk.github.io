@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
+import { ThemeType } from './theme';
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle<{ theme: ThemeType }>`
   html{
       background-color: ${(props) => props.theme.color.background};
   }
