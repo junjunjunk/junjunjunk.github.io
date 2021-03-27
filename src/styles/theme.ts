@@ -16,14 +16,14 @@ export type StyledComponentsThemeType = typeof styledComponentsTheme;
 
 // material-ui
 
-export const primaryPalatte: PaletteColorOptions = {
+export const primaryPalatte = {
   light: '#70a3a6',
   main: '#427477',
   dark: '#12484b',
   contrastText: '#FFFFFF',
 };
 
-export const secondaryPalette: PaletteColorOptions = {
+export const secondaryPalette = {
   light: '#ff8f8a',
   main: '#cb5f5d',
   dark: '#963033',

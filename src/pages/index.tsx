@@ -2,7 +2,7 @@ import Head from 'next/head';
 import React from 'react';
 import { Wrapper } from '../components/utils/Wrapper';
 import { AboutMePaper } from '../components/AboutMePaper';
-import { CareerPaper } from '../components/CareerPaper';
+import { CareerPaper } from '../components/CareerSection';
 
 export default function Home() {
   return (
