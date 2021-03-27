@@ -1,9 +1,9 @@
 import Head from 'next/head';
 import React from 'react';
-import { TopicCard } from '../components/TopicCard';
+import { TopicPaper } from '../components/TopicPaper';
 import { Flexbox } from '../components/utils/Flexbox';
 import { Wrapper } from '../components/utils/Wrapper';
-import { AboutMeCard } from '../components/AboutMeCard';
+import { AboutMePaper } from '../components/AboutMePaper';
 
 export default function Home() {
   return (
@@ -26,25 +26,26 @@ export default function Home() {
           alignItems="center"
           style={{ flexDirection: 'column', width: '100%', height: '100%' }}
         >
-          <Wrapper style={{ width: '64%' }}>
-            <AboutMeCard />
+          <Wrapper style={{ width: '56%' }}>
+            <AboutMePaper />
+          </Wrapper>
+
+          {/* 他のコンポーネントはPaperを使わない */}
+          {/* <Wrapper style={{ width: '64%' }}>
+            <TopicPaper title="経歴"></TopicPaper>
           </Wrapper>
 
           <Wrapper style={{ width: '64%' }}>
-            <TopicCard cardTitle="経歴"></TopicCard>
+            <TopicPaper title="活動"></TopicPaper>
           </Wrapper>
 
           <Wrapper style={{ width: '64%' }}>
-            <TopicCard cardTitle="活動"></TopicCard>
+            <TopicPaper title="興味"></TopicPaper>
           </Wrapper>
 
           <Wrapper style={{ width: '64%' }}>
-            <TopicCard cardTitle="興味"></TopicCard>
-          </Wrapper>
-
-          <Wrapper style={{ width: '64%' }}>
-            <TopicCard cardTitle="転職のお誘い"></TopicCard>
-          </Wrapper>
+            <TopicPaper title="転職のお誘い"></TopicPaper>
+          </Wrapper> */}
         </Flexbox>
       </main>
 

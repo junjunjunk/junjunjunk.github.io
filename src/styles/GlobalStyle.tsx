@@ -22,4 +22,8 @@ export const GlobalStyle = createGlobalStyle<{ theme: StyledComponentsThemeType 
   * {
     box-sizing: border-box;
   }
+
+  .gray-border {
+    border-color: rgba(221,224,228);
+  }
 `;

@@ -2,7 +2,7 @@
 //       https://github.com/styled-components/styled-components-website/issues/392
 // import { DefaultTheme } from 'styled-components';
 // export const theme: DefaultTheme = {
-import { createMuiTheme } from '@material-ui/core';
+import { createMuiTheme, PaletteColorOptions } from '@material-ui/core';
 
 // styled-components
 export const styledComponentsTheme = {
@@ -16,7 +16,7 @@ export type StyledComponentsThemeType = typeof styledComponentsTheme;
 
 // material-ui
 
-export const primaryPalatte = {
+export const primaryPalatte: PaletteColorOptions = {
   light: '#65AEFF',
   main: '#1E81D0',
   dark: '#00539F',
