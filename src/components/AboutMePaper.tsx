@@ -22,8 +22,13 @@ export const AboutMePaper: React.FC = () => {
           variant="h4"
           component="h4"
           className="font-light text-2xl mt-1"
+          display="inline"
         >
-          じゃんく | Jun Kudo
+          じゃんく{' '}
+          <Typography display="inline" className="text-xl text-gray-500">
+            |
+          </Typography>{' '}
+          Jun Kudo
         </Typography>
         <div className="inline mt-0.5 mb-6">
           <IconButton component={Link} href="https://github.com/junjunjunk" className="p-1">
@@ -60,7 +65,7 @@ export const AboutMePaper: React.FC = () => {
                 key={data}
                 variant="outlined"
                 color="default"
-                className="text-base text-gray-500"
+                className="text-base text-gray-600"
               />
             );
           })}

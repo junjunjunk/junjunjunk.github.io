@@ -8,7 +8,7 @@ import { createMuiTheme, PaletteColorOptions } from '@material-ui/core';
 export const styledComponentsTheme = {
   color: {
     text: '#212121',
-    background: '#EFF2F5',
+    background: '#ffecde',
     primary: '#1E81D0',
   },
 };
@@ -17,9 +17,16 @@ export type StyledComponentsThemeType = typeof styledComponentsTheme;
 // material-ui
 
 export const primaryPalatte: PaletteColorOptions = {
-  light: '#65AEFF',
-  main: '#1E81D0',
-  dark: '#00539F',
+  light: '#70a3a6',
+  main: '#427477',
+  dark: '#12484b',
+  contrastText: '#FFFFFF',
+};
+
+export const secondaryPalette: PaletteColorOptions = {
+  light: '#ff8f8a',
+  main: '#cb5f5d',
+  dark: '#963033',
   contrastText: '#FFFFFF',
 };
 
@@ -30,6 +37,7 @@ export const primaryPalatte: PaletteColorOptions = {
 export const muiTheme = createMuiTheme({
   palette: {
     primary: primaryPalatte,
+    secondary: secondaryPalette,
   },
 
   shape: {
