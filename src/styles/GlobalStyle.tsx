@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle<{ theme: StyledComponentsThemeType 
     font-family: -apple-system, BlinkMacSystemFont, Inter, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     color: ${(props) => props.theme.color.text};
+    line-height: 1.7;
   }
 
   a {

@@ -22,7 +22,6 @@ export const AboutMePaper: React.FC = () => {
           variant="h4"
           component="h4"
           className="font-light text-2xl mt-1"
-          display="inline"
         >
           じゃんく{' '}
           <Typography display="inline" className="text-xl text-gray-500">

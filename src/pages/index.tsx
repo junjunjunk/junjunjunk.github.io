@@ -4,6 +4,7 @@ import { TopicPaper } from '../components/TopicPaper';
 import { Flexbox } from '../components/utils/Flexbox';
 import { Wrapper } from '../components/utils/Wrapper';
 import { AboutMePaper } from '../components/AboutMePaper';
+import { CareerPaper } from '../components/Career';
 
 export default function Home() {
   return (
@@ -29,6 +30,9 @@ export default function Home() {
           <Wrapper style={{ width: '56%' }}>
             <AboutMePaper />
           </Wrapper>
+
+          <div className="mt-6"></div>
+          <CareerPaper />
 
           {/* 他のコンポーネントはPaperを使わない */}
           {/* <Wrapper style={{ width: '64%' }}>

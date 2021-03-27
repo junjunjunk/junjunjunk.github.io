@@ -48,6 +48,8 @@ export const muiTheme = createMuiTheme({
     fontFamily: [
       '-apple-system',
       'BlinkMacSystemFont',
+      'Dosis',
+      'ヒラギノ角ゴ Pro W3',
       'ヒラギノ角ゴシック',
       '"ヒラギノ角ゴ ProN"',
       '"Hiragino Kaku Gothic ProN"',
