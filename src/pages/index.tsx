@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import React from 'react';
-import { Wrapper } from '../components/utils/Wrapper';
 import { AboutMePaper } from '../components/AboutMePaper';
 import { CareerPaper } from '../components/CareerSection';
+import { JobOfferSection } from '../components/JobOfferSection';
 
 export default function Home() {
   return (
@@ -10,7 +10,6 @@ export default function Home() {
       style={{
         position: 'absolute',
         margin: 0,
-        height: '100%',
         width: '100%',
       }}
     >
@@ -20,28 +19,27 @@ export default function Home() {
       </Head>
 
       <main className="flex items-center justify-center flex-col w-full	h-full">
-        <Wrapper style={{ width: '56%' }}>
+        <div className="mt-6"></div>
+
+        <div className="w-11/12 sm:w-8/12 xl:w-7/12">
           <AboutMePaper />
-        </Wrapper>
+        </div>
 
         <div className="mt-6"></div>
-        <CareerPaper />
+        <div className="w-full sm:w-9/12 xl:w-7/12">
+          <CareerPaper />
+        </div>
 
         {/* TODO: 活動 */}
 
-        {/* 
-          <Wrapper style={{ width: '64%' }}>
-            <TopicPaper title="活動"></TopicPaper>
-          </Wrapper>
+        <div className="mt-6"></div>
 
-          <Wrapper style={{ width: '64%' }}>
-            <TopicPaper title="興味"></TopicPaper>
-          </Wrapper>
-
-          <Wrapper style={{ width: '64%' }}>
-            <TopicPaper title="転職のお誘い"></TopicPaper>
-          </Wrapper> */}
+        <div className="w-full sm:w-9/12 xl:w-7/12">
+          <JobOfferSection />
+        </div>
       </main>
+
+      <div className="my-10"></div>
 
       <footer></footer>
     </div>

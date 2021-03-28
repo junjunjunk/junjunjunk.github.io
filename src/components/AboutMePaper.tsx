@@ -44,19 +44,19 @@ export const AboutMePaper: React.FC = () => {
             <Image alt="LinkedIn" src="/LinkedInIcon.png" width={32} height={28} />
           </IconButton>
         </div>
-        <div className="w-5/6">
+        <div className="w-11/12">
           <Typography variant="inherit">
             東京大学大学院工学系研究科を卒業後、
             <Link href="https://dmm-corp.com/">合同会社DMM.com</Link>にエンジニアとして新卒入社。
             学生時代は<Link href="https://elyza.ai/">株式会社ELYZA</Link>
             にてコンサルティング業務並びに機械学習エンジニア・データサイエンティストとして需要予測システムの開発・構築とWEBアプリケーションの実装に携わる。
-            業務とは別にOSS活動を行っており、Pandas等にコントリビュートしている。 ご連絡がある際は{' '}
+            業務とは別にOSS活動を行っており、Pandas等にコントリビュートしている。技術領域気にせず何でもキャッチアップしがちです。ご連絡がある際は{' '}
             <Link href="https://twitter.com/j_nk71">Twitter</Link> もしくは{' '}
             <Link href="https://www.linkedin.com/in/jun-kudo-3b57101a3/">LinkedIn</Link>{' '}
             だと反応しやすいです。気軽につながってください。
           </Typography>
         </div>
-        <div className="mt-3">
+        <div className="flex flex-wrap justify-center mt-3">
           {skills.map((data) => {
             return (
               <Chip

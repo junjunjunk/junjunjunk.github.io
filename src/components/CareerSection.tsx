@@ -1,6 +1,6 @@
 import { Divider, List, ListItem, ListItemIcon, ListItemText, Typography } from '@material-ui/core';
 import React from 'react';
-import { carees } from '../data/career';
+import { Career, carees } from '../data/career';
 import { primaryPalatte } from '../styles/theme';
 
 // Resouce: https://heroicons.com/
@@ -22,6 +22,32 @@ const HashIcon: React.FC = () => {
   );
 };
 
+const CareerItem: React.FC<{ career: Career }> = ({ career }) => {
+  return (
+    <ListItem
+      key={career.companyName}
+      className="flex flex-wrap justify-center items-center flex-col sm:flex-row"
+    >
+      <div className="flex flex-nowrap flex-row sm:w-1/3">
+        <ListItemIcon className="min-w-0 mr-2">
+          <HashIcon />
+        </ListItemIcon>
+        <ListItemText
+          primaryTypographyProps={{
+            className: 'font-normal text-xl mt-1',
+            style: { color: primaryPalatte.dark },
+          }}
+          primary={career.companyName}
+          secondary={`${career.term[0]} ${career.term.length < 2 ? '' : `-${career.term[1]}`} `}
+        />
+      </div>
+      <div className="sm:w-2/3">
+        <ListItemText className="">{career.description}</ListItemText>
+      </div>
+    </ListItem>
+  );
+};
+
 export const CareerPaper: React.FC = () => {
   return (
     <>
@@ -34,28 +60,11 @@ export const CareerPaper: React.FC = () => {
       >
         経歴
       </Typography>
-      <List className="flex items-left justify-center flex-col w-7/12">
+      <List className="">
         {carees.map((c) => {
           return (
             <>
-              <ListItem key={c.companyName}>
-                <div className="flex flex-row w-1/3">
-                  <ListItemIcon className="min-w-0 mr-2">
-                    <HashIcon />
-                  </ListItemIcon>
-                  <ListItemText
-                    primaryTypographyProps={{
-                      className: 'font-normal text-xl mt-1',
-                      style: { color: primaryPalatte.dark },
-                      noWrap: true,
-                      align: 'justify',
-                    }}
-                    primary={c.companyName}
-                    secondary={`${c.term[0]} ${c.term.length < 2 ? '' : `-${c.term[1]}`} `}
-                  />
-                </div>
-                <ListItemText className="w-2/3">{c.description}</ListItemText>
-              </ListItem>
+              <CareerItem career={c} />
               <Divider variant="middle" component="li" />
             </>
           );
