@@ -26,8 +26,8 @@ jobs:
       - name: Install 🔧 
         run: npm ci
 
-      - name: build
-        run: npm run build 🔧 
+      - name: Build 🔧 
+        run: npm run build
 
       # for _next
       - name: Add nojekyll
