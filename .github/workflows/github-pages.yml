@@ -28,6 +28,8 @@ jobs:
 
       - name: Build 🔧 
         run: npm run build
+        env: 
+          GITHUB_PAGES: true
 
       # for static next.js (_next)
       - name: Export
