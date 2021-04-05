@@ -18,6 +18,7 @@
     "dotenv": "^8.2.0",
     "next": "10.0.9",
     "next-optimized-images": "^2.6.2",
+    "postcss-preset-env": "^6.7.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "styled-components": "^5.2.1"
