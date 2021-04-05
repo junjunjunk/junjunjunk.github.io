@@ -2,7 +2,6 @@ import React from 'react';
 import { TopicPaper } from './TopicPaper';
 import styled from 'styled-components';
 import { Avatar, Chip, IconButton, Link, Typography } from '@material-ui/core';
-import Image from 'next-optimized-images';
 import { skills } from '../data/skills';
 
 const SizedAvatar = styled(Avatar)`
@@ -31,17 +30,17 @@ export const AboutMePaper: React.FC = () => {
         </Typography>
         <div className="inline mt-0.5 mb-6">
           <IconButton component={Link} href="https://github.com/junjunjunk" className="p-1">
-            <Image alt="GitHub" src="/GithubCircleIcon.png" width={32} height={32} />
+            <img alt="GitHub" src="/GithubCircleIcon.png" width={32} height={32} />
           </IconButton>
           <IconButton component={Link} href="https://twitter.com/j_nk71" className="p-1">
-            <Image alt="TwitterCircleIcon" src="/TwitterCircleIcon.svg" width={32} height={32} />
+            <img alt="TwitterCircleIcon" src="/TwitterCircleIcon.svg" width={32} height={32} />
           </IconButton>
           <IconButton
             component={Link}
             href="https://www.linkedin.com/in/jun-kudo-3b57101a3/"
             className="p-1"
           >
-            <Image alt="LinkedIn" src="/LinkedInIcon.png" width={32} height={28} />
+            <img alt="LinkedIn" src="/LinkedInIcon.png" width={32} height={28} />
           </IconButton>
         </div>
         <div className="w-11/12">
