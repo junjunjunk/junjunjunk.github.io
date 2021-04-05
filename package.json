@@ -9,7 +9,8 @@
     "lint": "eslint src/** --fix  --ext .ts,.tsx",
     "lint:fix": "npm run lint && npm run format",
     "format": "prettier --config .prettierrc.json --write '**/*.tsx'",
-    "export": "next export"
+    "export": "next export",
+    "serve": "serve ./out"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
@@ -35,6 +36,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "postcss": "^8.2.8",
     "prettier": "^2.2.1",
+    "serve": "^11.3.2",
     "tailwindcss": "^2.0.4",
     "typescript": "^4.2.3"
   }
