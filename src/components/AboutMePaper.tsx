@@ -2,7 +2,7 @@ import React from 'react';
 import { TopicPaper } from './TopicPaper';
 import styled from 'styled-components';
 import { Avatar, Chip, IconButton, Link, Typography } from '@material-ui/core';
-import Image from 'next/image';
+import Image from 'next-optimized-images';
 import { skills } from '../data/skills';
 
 const SizedAvatar = styled(Avatar)`
