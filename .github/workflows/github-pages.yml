@@ -30,10 +30,12 @@ jobs:
     - name: build
       run: npm run build 🔧 
 
+    # for _next
+    - name: Add nojekyll
+      run: touch ./out/.nojekyll
+
     - name: Deploy 🚀
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: master
         publish_dir: ./out
-        clean: true
