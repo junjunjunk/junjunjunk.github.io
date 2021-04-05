@@ -30,10 +30,8 @@ jobs:
         run: npm run build
 
       # for static next.js (_next)
-      - name: Export
-        run: |
-          npm run export
-          touch ./out/.nojekyll
+      - name: set nojekyll
+        run: touch ./out/.nojekyll
 
       - name: Deploy 🚀
         uses: peaceiris/actions-gh-pages@v3
