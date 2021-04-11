@@ -28,7 +28,7 @@ const CareerItem: React.FC<{ career: Career }> = ({ career }) => {
       key={career.companyName}
       className="flex flex-wrap justify-center items-center flex-col sm:flex-row"
     >
-      <div className="flex flex-nowrap flex-row sm:w-1/3">
+      <div className="flex flex-nowrap flex-row justify-center items-center sm:w-1/3">
         <ListItemIcon className="min-w-0 mr-2">
           <HashIcon />
         </ListItemIcon>
