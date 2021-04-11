@@ -67,9 +67,8 @@ export const JobOfferSection: React.FC = () => {
                   <Chip
                     label={data}
                     key={data}
-                    variant="outlined"
-                    color="default"
-                    className="text-base"
+                    color="primary"
+                    className="text-base mx-0.5	my-0.5"
                   />
                 );
               })}
