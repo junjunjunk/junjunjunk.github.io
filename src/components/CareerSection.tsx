@@ -2,7 +2,6 @@ import { Divider, List, ListItem, ListItemIcon, ListItemText, Typography } from 
 import React from 'react';
 import { Career, carees } from '../data/career';
 import { primaryPalatte } from '../styles/theme';
-z;
 
 // Resouce: https://heroicons.com/
 const HashIcon: React.FC = () => {
