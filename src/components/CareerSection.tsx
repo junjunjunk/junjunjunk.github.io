@@ -2,6 +2,7 @@ import { Divider, List, ListItem, ListItemIcon, ListItemText, Typography } from 
 import React from 'react';
 import { Career, carees } from '../data/career';
 import { primaryPalatte } from '../styles/theme';
+z;
 
 // Resouce: https://heroicons.com/
 const HashIcon: React.FC = () => {
@@ -10,7 +11,7 @@ const HashIcon: React.FC = () => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 20"
       fill="currentColor"
-      className="w-8 m-0"
+      className="w-8 m-0 h-8"
       color={primaryPalatte.dark}
     >
       <path
